@@ -11,7 +11,7 @@ import Register from './components/Register';
 import Login from './components/Login';
 import Home from './components/Home';
 import Copyright from './components/Copyright/Copyright';
-
+import Appname from './components/AppName/Appname';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -36,6 +36,7 @@ class App extends Component {
             <div className="center">
               <Navbar/>
               <Logo/>
+              <Appname/>
                 <Route exact path="/" component={ Home } />
                 <div className="container">
                   <Route exact path="/register" component={ Register } />
