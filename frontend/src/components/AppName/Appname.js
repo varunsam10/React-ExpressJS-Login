@@ -4,7 +4,7 @@ class AppName extends React.Component {
     render(){
         return(
             <div class="text-center">
-            <h1>VIDEO MANAGMENT AND INTEGRATED SUPPORT SYSTEM</h1>
+            <h5 style={{marginBottom: '40px',marginTop :'20px'}}>VIDEO MANAGMENT AND INTEGRATED SUPPORT SYSTEM</h5>
           </div>
         );
     }

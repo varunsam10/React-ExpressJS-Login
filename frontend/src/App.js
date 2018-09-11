@@ -13,6 +13,8 @@ import Home from './components/Home';
 import Copyright from './components/Copyright/Copyright';
 import Appname from './components/AppName/Appname';
 
+
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 if(localStorage.jwtToken) {
@@ -27,10 +29,11 @@ if(localStorage.jwtToken) {
   }
 }
 
+
+
 class App extends Component {
   render() {
-    return (
-      
+    return ( 
       <Provider store = { store }>
         <Router>
             <div className="center">
