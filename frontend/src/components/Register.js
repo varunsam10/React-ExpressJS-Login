@@ -35,13 +35,13 @@ class Register extends Component {
             password_confirm: this.state.password_confirm,
         }
         this.props.registerUser(user, this.props.history);
-        alert('account successfully created!');
+        alert('user is created !!!');
     }
 
     componentWillReceiveProps(nextProps) {
         if(nextProps.auth.isAuthenticated) {
             this.props.history.push('/')
-            
+
         }
         if(nextProps.errors) {
             this.setState({
@@ -61,7 +61,7 @@ class Register extends Component {
         return(
         <div className="container" style={{ width: '400px'}}>
             <h3 style={{marginBottom: '40px'}}>REGISTRATION</h3>
-            <form onSubmit={ this.handleSubmit }>
+            <form onSubmit={ this.handleSubmit}>
                 <div className="form-group">
                     <input
                     type="text"
